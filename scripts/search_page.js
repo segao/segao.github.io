@@ -2,8 +2,7 @@ const linkDict = {'about' : 'About Me',
                   'education' : 'Education',
                   'workexp' : 'Work Experience',
                   'projects' : 'Projects',
-                  'skills' : 'Skills',
-                  'awards' : 'Awards',
+                  'skills' : 'Skills and Awards',
                   'contact' : 'Contact'};
 const linkContainer = document.getElementsByClassName('link-container')[0];
 var active_id = window.location.hash.substring(1);
