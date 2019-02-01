@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Gaogle</title>
+  
+  <!--  Styles  -->
+  <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/shared/assets.processed.css">
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+  <div class="body">
+    <div class="header">
+      <div class="left-container"><a href="search_page.html#about" class="text-link" onclick="active_id = 'about'">About Me</a></div>
+      <div class="right-container">
+        <table id="contacticon">
+          <tr>
+            <td class="contactsquare"></td><td class="contactsquare"></td><td class="contactsquare"></td>
+          </tr>
+          <tr>
+            <td class="contactsquare"></td><td class="contactsquare"></td><td class="contactsquare"></td>
+          </tr>
+          <tr>
+            <td class="contactsquare"></td><td class="contactsquare"></td><td class="contactsquare"></td>
+          </tr>
+        </table>
+        <div id="iconwindow">
+          <table class="icontable">
+            <tr>
+              <td>
+                <a href="http://www.github.com/segao" target="_blank"><img src="https://www.shareicon.net/download/2017/06/21/887457_logo_512x512.png" class="socialicon"></a>
+                <br>Github
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/in/segao95" target="_blank"><img src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" class="socialicon"></a>
+                <br>LinkedIn
+              </td>
+              <td>
+                <a href="https://segao.github.io/img/icons/facebook.jpg" target="_blank"><img src="http://icons-for-free.com/free-icons/png/512/287765.png" class="socialicon"></a>
+                <br>Facebook
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="mailto:gao.se95@gmail.com"><img src="http://icons-for-free.com/free-icons/png/512/925798.png" class="socialicon"></a>
+                <br>Email
+              </td>
+            </tr>
+          </table>
+        </div>
+        <button id="resumebutton">Resume</button>
+      </div>
+    </div>
+    <div class="search-container">
+      <a class="logo-link" onclick="replayMessages()">
+      <span class="logo">G</span>
+      <span class="logo">a</span>
+      <span class="logo">o</span>
+      <span class="logo">g</span>
+      <span class="logo">l</span>
+      <span class="logo">e</span> 
+      </a>
+      <br><br>
+      <form autocomplete="off">
+        <input type="text" id="searchbar" onclick="stopMessages()" readonly="readonly" />
+      </form>
+      <br><br>
+      <button class="searchbutton">Gaogle Search</button> <button class="searchbutton">I'm Feeling Lucky</button>
+      <br><br>
+      <div class="subheader">A website for Sharon Gao.</div>
+    </div>
+    <div class="footer">
+      <div class="left-container"><a href="search_page.html#contact" onclick="active_id = 'contact'">Contact</a></div>
+      <div class="right-container">© Sharon Gao 2018</div>
+    </div>
+  </div>
+  <script src="scripts/shared/contact_window.js"></script>
+  <script src="scripts/shared/typing_animation.js"></script>
+  <script src="scripts/search_page.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

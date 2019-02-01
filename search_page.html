@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Gaogle</title>
+  
+  <!--  Styles  -->
+  <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/shared/assets.processed.css">
+  <link rel="stylesheet" href="styles/shared/search_page.processed.css">
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header">
+        <div class="left-container">
+          <a href="index.html" class="logo-link">
+            <span class="small-logo">G</span>
+            <span class="small-logo">a</span>
+            <span class="small-logo">o</span>
+            <span class="small-logo">g</span>
+            <span class="small-logo">l</span>
+            <span class="small-logo">e</span> 
+          </a>
+        </div>
+        <div class="searchbar-container">
+          <form autocomplete="off">
+            <input type="text" id="searchbar" onclick="stopMessages()" readonly="readonly" />
+          </form>
+        </div>
+        <div class="right-container">
+          <table id="contacticon">
+            <tr>
+              <td class="contactsquare"></td><td class="contactsquare"></td><td class="contactsquare"></td>
+            </tr>
+            <tr>
+              <td class="contactsquare"></td><td class="contactsquare"></td><td class="contactsquare"></td>
+            </tr>
+            <tr>
+              <td class="contactsquare"></td><td class="contactsquare"></td><td class="contactsquare"></td>
+            </tr>
+          </table>
+          <div id="iconwindow">
+            <table class="icontable">
+              <tr>
+                <td>
+                  <a href="http://www.github.com/segao" target="_blank"><img src="https://www.shareicon.net/download/2017/06/21/887457_logo_512x512.png" class="socialicon"></a>
+                  <br>Github
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/in/segao95" target="_blank"><img src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" class="socialicon"></a>
+                  <br>LinkedIn
+                </td>
+                <td>
+                  <a href="https://segao.github.io/img/icons/facebook.jpg" target="_blank"><img src="http://icons-for-free.com/free-icons/png/512/287765.png" class="socialicon"></a>
+                  <br>Facebook
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="mailto:gao.se95@gmail.com"><img src="http://icons-for-free.com/free-icons/png/512/925798.png" class="socialicon"></a>
+                  <br>Email
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button id="resumebutton">Resume</button>
+        </div>
+      </div>
+  </div>
+  <div class="navbar-wrapper">
+    <div class="navbar">
+      <div class="link-container">
+        <div class="link" id="about-link"><a href="search_page.html#about" onclick="navigateToAnotherLink('about')">About Me</a></div>
+        <div class="link" id="education-link"><a href="search_page.html#education" onclick="navigateToAnotherLink('education')">Education</a></div>
+        <div class="link" id="workexp-link"><a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')">Work Experience</a></div>
+        <div class="link" id="projects-link"><a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')">Projects</a></div>
+        <div class="link" id="skills-link"><a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')">Skills</a></div>
+        <div class="link" id="awards-link"><a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')">Awards</a></div>
+        <div class="link" id="contact-link"><a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')">Contact</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div id="searchresults">About 7,550,000 results (0.48 seconds)</div>
+    
+    <!------ About Me Content ------>
+    <div id="about-content">
+      <div class="main-half main-left">
+        <div class="left-window-text-container">
+          <i>Sharon Gao</i>
+          <br><u>Computer Science student, University of Pittsburgh</u>
+          <br>Hi there! I am a Computer Science student at the University of Pittsburgh. I am slated to graduate in May 2019 with one year of industry experience. I pride myself on my independence and ability to figure things out on my own. I love getting my hands dirty and getting the "aha!" moment following a long, drawn-out debugging process. I'm always looking for more opportunities to learn and gain experience.
+        </div>
+        <br>
+        <div class="left-window-text-container">
+          <i>Hobbies</i>
+          <br><u>Video gaming, Side projects, Art</u>
+          <br>I am a video game fanatic who's always able to make some time for a League of Legends match, or two. I love tinkering with side projects and I am currently learning web design & development on my own.  
+        </div>
+        <br>
+        <div class="left-window-text-container">
+          <i>Future Plans</i>
+          <br><u>Further education</u>
+          <br>At the moment, I'm looking forward to jumping into the industry at Amazon right after graduation. I plan on taking the next year to deliberate the opportunity costs of pursuing a masters in Computer Science or an MBA.
+        </div>
+        <br>
+        <div class="left-window-text-container">
+          <i>Pets</i>
+          <br><u>Dog lover!</u>
+          <br>I have a 12-year old Shih Tzu named Grady who I love to bits. I'm looking forward to bringing my lovable doof to work! Doggie perks are always a plus in my book. ;)
+        </div>
+        <br>
+        <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="index.html" onclick="deselectLink()">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="index.html" onclick="deselectLink()"><span>G</span></a>
+            <b id="red-letter">a</b>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')"><b class="yellow-letter">o</b>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="right-window">
+          <div class="right-window-image-container">
+            <img src="https://segao.github.io/img/banner/profile.jpg" class="right-window-image-me">
+          </div>
+          <h1>Sharon Gao</h1>
+          <div class="right-window-text-container"><i>Incoming Software Developer at Amazon</i></div>
+          <hr>
+          <div class="right-window-text-container">Sharon Elizabeth Gao is an upcoming graduate from University of Pittsburgh. She will graduate with a bachelors of science in Computer Science in May 2019. Sharon was born in Nashville, Tennesee and grew up near Pittsburgh, Pennsylvania in the suburb of Upper Saint Clair. </div>
+          <div class="right-window-text-container"><b>Age:</b> 23</div>
+          <div class="right-window-text-container"><b>Education:</b> University of Pittsburgh, B.S. in Computer Science (2013-2018)</div>
+          <div class="right-window-text-container"><b>Occupation:</b> Software Developer I</div>
+          <div class="right-window-text-container"><b>Hobbies:</b> Video games, drawing, working on side projects</div>
+        </div>
+      </div>
+    </div>
+      
+      
+    <!------ Education content ------>  
+    <div id="education-content">
+      <div class="main-half main-left">
+         <div class="left-window-text-container">
+          <i>University of Pittsburgh</i>
+          <br><u>Bachelor of Science, Computer Science 2013-2019</u>
+          <br>I am a fourth year computer science student at Pitt, slated to graduate this spring in May 2019. I was originally a Biology major on the Pre-Med track until I switched majors at the beginning of my junior year. I completed the Computer Science co-op program in December 2018 after finishing two fall semester internships.
+           <p><table id="coursework">
+             <tr><td>Relevant Coursework:</td></tr>
+             <tr><td>
+               <ul>
+                 <li>Algorithm Implementation</li>
+                 <li>Software Quality Assurance</li>
+                 <li>Introduction to Operating Systems</li>
+                 <li>Introduction to Information Security and Compliance</li>
+               </ul>
+               </td>
+               <td>
+                 <ul>
+                   <li>Programming Languages for Web Applications</li>
+                   <li>Introduction to Data Science</li>
+                   <li>Formal Methods</li> 
+                   <li>Software Engineering</li>
+               </ul>
+               </td>
+             </tr>
+           </table>
+        </div>
+        <br><br>
+        <div class="left-window-text-container">
+          <i>Upper Saint Clair High School</i>
+          <br><u>Class of 2013</u>
+          <br>I graduated from USC High School in 2013. My PSAT and SAT scores placed within the 99th percentile and I was honored as a National Merit Finalist. 
+          <p>I played flute for the marching band and wind ensemble all four years and served as our school's debate captain for our Forensics team during its most successful year at the time.
+        </div>
+        <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><span>G</span></a>
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><b class="yellow-letter">a</b></a>
+            <b id="red-letter">o</b>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="right-window half-window">
+          <div class="right-window-image-container half-image">
+            <img src="http://media.bizj.us/view/img/3138301/sign*750xx4256-2394-0-219.jpg"  class="right-window-image-pitt">
+          </div>
+          <h1>University of Pittsburgh</h1>
+          <div class="right-window-text-container"><i>Pittsburgh, Pennsylvania</i></div>
+        </div>
+        <br><br>
+        <div class="right-window half-window">
+          <div class="right-window-image-container half-image">
+            <img src="https://bloximages.newyork1.vip.townnews.com/thealmanac.net/content/tncms/assets/v3/editorial/d/fb/dfb8999e-6da5-11e8-bdc0-cb970fd10d74/5b1ec0ec8af5e.image.jpg?resize=400%2C300" class="right-window-image-usc">
+          </div>
+          <h1>USC High School</h1>
+          <div class="right-window-text-container"><i>Upper St. Clair, Pennsylvania</i></div>
+        </div>
+      </div>
+    </div>
+      
+    <!----- Work Experience Content ------>
+    <div id="workexp-content">
+      <div class="main-half main-left">
+        <div class="left-window-text-container">
+          <i><b>Amazon - Software Developer I</b></i>
+          <br><u>July 2018 - </u>
+          <br>I accepted Amazon's fulltime return offer and I'm looking forward to starting in July!
+        </div>
+        <br>
+        <div class="left-window-text-container">
+          <i>Amazon - Software Developer Internship</i>
+          <br><u>May 2018 - August 2018</u>
+          <br>I spent the summer of 2018 in Seattle at Amazon as an SDE (Software Developer Engineer) intern. I worked on the Package Builder Services team of the AWS Developer Tools organization. 
+          <ul>
+            <li>Designed and developed a production-ready artifact file browsing service</li>
+            <li>Improved artifact lookup time by over 93%, from 24 seconds to 1.6 seconds</li>
+            <li>Shored up security problems and latency slowdowns from the previous tool</li>
+            <li>Implemented authorization and permission checking of AWS accounts</li>
+        </div>
+        <br><br>
+        <div class="left-window-text-container">
+          <i>ANSYS - Co-op Rotation 2 (Software Developer Intern)</i>
+          <br><u>August 2018 - December 2018</u>
+          <br>I rejoined the AIM Infrastructure team for my second rotation.
+          <ul>
+            <li>Independently implemented multiple features and user stories</li>
+            <li>Developed a reusable Databricks report that queries usage data</li>
+            <li>Resolved performance defects and optimized product start up time through dotTrace profiling</li>
+          </ul>
+        </div>
+        
+        <div class="left-window-text-container">
+          <i>ANSYS - Co-op Rotation 1 (Software Developer Intern)</i>
+          <br><u>September 2018 - December 2018</u>
+          <br>I was assigned to the AIM Infrastructure (3D Simulation) team during my first rotation.
+          <ul>
+            <li>Designed and developed an automated profiler tool that improved time taken to investigate
+              performance issues by 40%</li>
+            <li>Performed defect triage and prevention, with a focus on high-priority issues</li>
+            <li>Improved and simplified developer ramp up process with automated scripts</li>
+          </ul>
+        </div>
+        <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><span>G</span></a>
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><b class="yellow-letter">a</b></a>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><b class="yellow-letter">o</b></a>
+            <b id="red-letter">o</b>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="right-window half-window">
+          <div class="right-window-image-container half-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Amazon_logo_plain.svg/2000px-Amazon_logo_plain.svg.png"  class="right-window-image-amzn">
+          </div>
+          <h1>Amazon</h1>
+          <div class="right-window-text-container"><i>Seattle, Washington</i></div>
+        </div>
+        <div class="right-window half-window top-padding">
+          <div class="right-window-image-container half-image">
+            <img src="http://evonexus.org/wp-content/uploads/2016/06/ansys.png"  class="right-window-image-ansys">
+          </div>
+          <h1>ANSYS</h1>
+          <div class="right-window-text-container"><i>Canonsburg, Pennsylvania</i></div>
+        </div>
+      </div>
+    </div>
+      
+      
+    <!------ Projects Content ------>
+    <div id="projects-content">
+      <div class="main-half main-left">
+        <div class="left-window-text-container">
+          edu
+        </div>
+        <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><span>G</span></a>
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><b class="yellow-letter">a</b></a>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><b class="yellow-letter">o</b></a>
+            <b id="red-letter">o</b>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="left-window-text-container">
+          edu
+        </div>
+      </div>
+    </div>
+      
+      
+    <!----- Skills Content ------>
+    <div id="skills-content">
+      <div class="main-half main-left">
+        <div class="left-window-text-container">
+          edu
+        </div>
+        
+        <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><span>G</span></a>
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><b class="yellow-letter">a</b></a>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><b class="yellow-letter">o</b></a>
+            <b id="red-letter">o</b>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="left-window-text-container">
+          edu
+        </div>
+      </div>
+    </div>
+      
+      
+    <div id="awards-content">
+      <div class="main-half main-left">
+        <div class="left-window-text-container">
+          edu
+        </div>
+        
+        <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><span>G</span></a>
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><b class="yellow-letter">a</b></a>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><b class="yellow-letter">o</b></a>
+            <b id="red-letter">o</b>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="left-window-text-container">
+          edu
+        </div>
+      </div>
+    </div>
+      
+      
+    <!------ Contact Content ------>
+    <div id="contact-content">
+      <div class="main-half main-left">
+        <div class="left-window-text-container">
+          edu
+        </div>
+                <div class="left-window-text-container bottom-nav">
+          <div class="brackets">
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')">&lt;</a>
+          </div>
+          <div class="gaogle">
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><span>G</span></a>
+            <a href="search_page.html#about" onclick="navigateToAnotherLink('about')"><b class="yellow-letter">a</b></a>
+            <a href="search_page.html#education" onclick="navigateToAnotherLink('education')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#workexp" onclick="navigateToAnotherLink('workexp')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#projects" onclick="navigateToAnotherLink('projects')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#skills" onclick="navigateToAnotherLink('skills')"><b class="yellow-letter">o</b></a>
+            <a href="search_page.html#awards" onclick="navigateToAnotherLink('awards')"><b class="yellow-letter">o</b></a>
+            <b id="red-letter">o</b>
+            <a href="index.html" onclick="deselectLink()">
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>  
+            </a>
+          </div>
+          <div class="brackets">
+            <a href="index.html" onclick="deselectLink()">&gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-half main-right">
+        <div class="left-window-text-container">
+          edu
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="left-container"><a href="search_page.html#contact" onclick="navigateToAnotherLink('contact')">Contact</a></div>
+    <div class="right-container bot">© Sharon Gao 2018</div>
+  </div>
+  <script src="scripts/search_page.js"></script>
+  <script src="scripts/shared/contact_window.js"></script>
+  <script src="scripts/shared/typing_animation.js"></script>
+  <script>
+    navigateToLink();
+  </script>
+</body>
+</html>
